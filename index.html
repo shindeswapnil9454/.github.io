@@ -24,22 +24,22 @@
     }
 
     /* HERO */
-    .hero img {
-  width: 160px;
-  height: 160px;
-  border-radius: 50%;
-  object-fit: contain;
-  background: #f4f6f8;
-  padding: 6px;
-  border: 3px solid #e5e7eb;
-}
+    .hero {
+      display: flex;
+      align-items: center;
+      gap: 35px;
+      flex-wrap: wrap;
+      margin-bottom: 30px;
+    }
 
     .hero img {
-      width: 150px;
-      height: 150px;
+      width: 160px;
+      height: 160px;
       border-radius: 50%;
-      object-fit: cover;
-      border: 4px solid #eef2f6;
+      object-fit: contain;
+      background: #f4f6f8;
+      padding: 6px;
+      border: 3px solid #e5e7eb;
     }
 
     h1 {
@@ -141,9 +141,14 @@
       margin-bottom: 8px;
     }
 
-    .project-title {
+    .project-title a {
       font-weight: 600;
-      margin-top: 16px;
+      color: #0b5ed7;
+      text-decoration: none;
+    }
+
+    .project-title a:hover {
+      text-decoration: underline;
     }
 
     .footer {
@@ -158,7 +163,7 @@
 <body>
   <div class="container">
 
-    <!-- HERO HEADER -->
+    <!-- HERO -->
     <div class="hero">
       <img src="Headshot.png" alt="Swapnil Shinde Headshot">
 
@@ -167,7 +172,7 @@
         <div class="title">Product Data Analyst</div>
 
         <a class="resume-btn"
-           href="Swapnil_Shinde_Resume.pdf"
+           href="SWAPNIL_SHINDE-AWS.pdf"
            target="_blank"
            download>
           📄 Download Resume
@@ -193,53 +198,62 @@
       KPI frameworks, and executive-ready storytelling.
     </p>
 
-    <!-- THREE PILLARS -->
+    <!-- PILLARS -->
     <div class="pillars">
       <div class="pillar">
         <h3>Analyze</h3>
-        <p>
-          Advanced analytics using SQL, BigQuery, Snowflake, and Redshift to uncover
-          trends, performance drivers, and business insights at scale.
-        </p>
+        <p>SQL-driven analytics across BigQuery, Snowflake, and Redshift to uncover trends and insights.</p>
       </div>
-
       <div class="pillar">
         <h3>Build</h3>
-        <p>
-          Designed and automated scalable data pipelines using Python, PySpark,
-          AWS (S3, Glue, Lambda), and MCP for reliable production analytics.
-        </p>
+        <p>Scalable pipelines using Python, PySpark, AWS (S3, Glue, Lambda), and MCP.</p>
       </div>
-
       <div class="pillar">
         <h3>Visualize</h3>
-        <p>
-          Built executive-ready dashboards and KPI frameworks using Power BI and Tableau,
-          enabling clear, actionable data storytelling.
-        </p>
+        <p>Executive-ready dashboards and KPIs using Power BI and Tableau.</p>
       </div>
     </div>
 
     <!-- SKILLS -->
     <h2>Skills & Technologies</h2>
     <div class="skills">
-      <span>SQL (CTEs, Window Functions)</span>
-      <span>Python</span>
-      <span>PySpark</span>
-      <span>Power BI</span>
-      <span>Tableau</span>
-      <span>Advanced Excel</span>
+      <span>SQL</span><span>Python</span><span>PySpark</span><span>Power BI</span>
+      <span>Tableau</span><span>Advanced Excel</span>
       <span>AWS (S3, Glue, Athena, Redshift, Lambda)</span>
-      <span>Snowflake</span>
-      <span>BigQuery</span>
-      <span>Seller Data</span>
-      <span>CRM Data</span>
-      <span>JIRA (Agile)</span>
-      <span>MCP</span>
+      <span>Snowflake</span><span>BigQuery</span>
+      <span>Seller Data</span><span>CRM Data</span>
+      <span>JIRA (Agile)</span><span>MCP</span>
     </div>
 
-    <!-- EXPERIENCE, PROJECTS, EDUCATION -->
-    <!-- (UNCHANGED – your existing sections remain exactly the same below) -->
+    <!-- PROJECTS -->
+    <h2>Key Projects</h2>
+
+    <div class="project-title">
+      <a href="projects/ad-campaign-analysis.html">Advertising & Ad Campaign Analysis</a>
+    </div>
+    <ul><li>Multi-region performance metrics covering CPC, CTR, revenue, and ROI.</li></ul>
+
+    <div class="project-title">
+      <a href="projects/clickstream-analysis.html">Customer Insights via Clickstream Analysis</a>
+    </div>
+    <ul><li>Behavioral analysis using AWS S3 and Lambda-powered pipelines.</li></ul>
+
+    <div class="project-title">
+      <a href="projects/crm-data-enrichment.html">CRM Data Analysis & Enrichment</a>
+    </div>
+    <ul><li>Large-scale CRM cleansing, enrichment, and QA automation.</li></ul>
+
+    <div class="project-title">
+      <a href="projects/high-volume-data-processing.html">High-Volume Company & Contact Data Processing</a>
+    </div>
+    <ul><li>Processed 100M+ company and 25M+ contact records using SQL, PySpark, and AWS.</li></ul>
+
+    <!-- EDUCATION -->
+    <h2>Education</h2>
+    <ul>
+      <li>MBA — Symbiosis School for Online & Digital Learning (Pursuing)</li>
+      <li>B.Tech — Maharashtra Institute of Technology, Aurangabad</li>
+    </ul>
 
     <div class="footer">
       © 2025 Swapnil Shinde · Product Data Analyst
