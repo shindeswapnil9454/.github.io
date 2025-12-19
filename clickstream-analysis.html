@@ -11,51 +11,116 @@
       background: #f4f6f8;
       margin: 0;
       color: #2c2c2c;
+      line-height: 1.6;
     }
+
     .container {
-      max-width: 900px;
+      max-width: 1000px;
       margin: 40px auto;
       background: #ffffff;
       padding: 45px;
       border-radius: 8px;
       box-shadow: 0 10px 25px rgba(0,0,0,0.08);
     }
-    a {
-      color: #0b5ed7;
-      text-decoration: none;
-      font-weight: 500;
+
+    /* NAVBAR (same logic as home) */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 30px;
     }
-    ul { padding-left: 22px; }
+
+    .navbar a {
+      text-decoration: none;
+      margin-right: 18px;
+      color: #0b5ed7;
+      font-weight: 500;
+      font-size: 14px;
+    }
+
+    h1 {
+      font-size: 30px;
+      margin-bottom: 10px;
+    }
+
+    h3 {
+      margin-top: 30px;
+      font-size: 20px;
+    }
+
+    ul {
+      padding-left: 22px;
+      margin-top: 10px;
+    }
+
+    .section {
+      margin-top: 30px;
+    }
+
+    .footer {
+      margin-top: 60px;
+      text-align: center;
+      font-size: 13px;
+      color: #777;
+    }
   </style>
 </head>
 
 <body>
   <div class="container">
 
-    <a href="index.html">← Back to Home</a>
+    <!-- NAVBAR / MAIN PART -->
+    <div class="navbar">
+      <div><strong>Swapnil Shinde</strong></div>
+      <div>
+        <a href="index.html">Home</a>
+        <a href="index.html#projects">Projects</a>
+        <a href="SWAPNIL_SHINDE-AWS.pdf" download>Resume</a>
+      </div>
+    </div>
 
+    <!-- PAGE CONTENT -->
     <h1>Customer Insights via Clickstream Analysis</h1>
 
-    <h3>Problem</h3>
-    <p>Understanding user navigation patterns to reduce drop-offs.</p>
+    <div class="section">
+      <h3>Problem</h3>
+      <p>
+        Product and marketing teams needed a clear understanding of how users
+        navigate the platform and where drop-offs were occurring.
+      </p>
+    </div>
 
-    <h3>Approach</h3>
-    <ul>
-      <li>Processed clickstream events from AWS S3</li>
-      <li>Sessionized users using Python & SQL</li>
-      <li>Built funnel metrics and dashboards</li>
-    </ul>
+    <div class="section">
+      <h3>Approach</h3>
+      <ul>
+        <li>Ingested clickstream event data stored in AWS S3</li>
+        <li>Sessionized user activity using Python and SQL</li>
+        <li>Built funnel and path analysis metrics</li>
+      </ul>
+    </div>
 
-    <h3>Tools Used</h3>
-    <ul>
-      <li>AWS S3</li>
-      <li>Python</li>
-      <li>SQL</li>
-      <li>Power BI</li>
-    </ul>
+    <div class="section">
+      <h3>Tools Used</h3>
+      <ul>
+        <li>AWS S3</li>
+        <li>Python</li>
+        <li>SQL</li>
+        <li>Power BI</li>
+      </ul>
+    </div>
 
-    <h3>Impact</h3>
-    <p>Identified key friction points and improved user journeys.</p>
+    <div class="section">
+      <h3>Impact</h3>
+      <p>
+        Identified high-friction user journeys and enabled data-driven
+        UX improvements that improved engagement.
+      </p>
+    </div>
+
+    <div class="footer">
+      © 2025 Swapnil Shinde · Product Data Analyst
+    </div>
 
   </div>
 </body>
